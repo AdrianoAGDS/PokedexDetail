@@ -1,0 +1,90 @@
+.pokemons{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.pokemon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    row-gap: 1px;
+}
+
+.pokemons li {
+    padding: 1rem 0 0 0;
+}
+
+.pokemon .number {
+    color: #fff;
+    text-align: right;
+    padding: 2rem 2rem 0 0;
+    font-size: 1rem;
+}
+
+.pokemon .name {
+    text-transform: capitalize;
+    color: #fff;
+    padding: 0 0 0 1rem;
+}
+
+.pokemon .detail {
+    text-align: center;
+}
+
+.pokemon .detail .types {
+    display: flex;
+    padding: 0 0 0 1rem;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types li {
+    padding: 0 0.2rem 0 0;
+    margin: 0 .5rem .5rem 0;
+    color: #fff;
+    filter: brightness(1.1);
+    border-radius: 1rem;
+
+}
+
+
+.pokemon .detail img {
+    max-width: 100%;
+    height: 0;
+}
+
+.avatarPokemon {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.avatarPokemon img {
+    grid-column: span 2;
+    width: 90%;
+    height: 100%;
+}
+.avatarPokemon {
+    grid-column: span 2;
+    align-items: center;
+}
+
+.barra {
+    margin-top: .5rem;
+    height: 2px;
+    background-color: #ccc;
+    /* pseudo-elementos precisam de um
+      conteúdo para terem altura.
+      Como não teremos conteúdo no nosso
+      pseudo-elemento, utilizar
+      "display: flex" o força a
+      ter a altura do elemento pai.
+      */
+  }
+  
+.barraColum {
+    grid-column: span 3;
+}
