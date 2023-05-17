@@ -12,6 +12,8 @@
     row-gap: 1px;
 }
 
+p {font-size: bolder;
+}
 .pokemons li {
     padding: 1rem 0 0 0;
 }
